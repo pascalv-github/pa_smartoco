@@ -1,0 +1,32 @@
+{
+	"@type":"Cube",
+	"Name":"}Hold_Planning Analytics_Pascal Viguie_}}_Revenue",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Channel')"
+		},
+		{
+			"@id":"Dimensions('product')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Revenue')"
+		},
+		{
+			"@id":"Dimensions('}Hold')"
+		}
+	],
+	"Views@Code.links":[]
+}

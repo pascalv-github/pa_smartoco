@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"}HierarchyAttributes_Employee",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Hierarchies_Employee')"
+		},
+		{
+			"@id":"Dimensions('}HierarchyAttributes_Employee')"
+		}
+	],
+	"Views@Code.links":[]
+}

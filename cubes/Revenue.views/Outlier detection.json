@@ -1,0 +1,49 @@
+{
+	"@type":"MDXView",
+	"Name":"Outlier detection",
+	"MDX@Code.link":"Outlier detection.mdx",
+	"Meta" : 
+	{
+		"Aliases" : 
+		{
+			"[Channel].[Channel]" : "Caption_Default",
+			"[Revenue].[Revenue]" : "Caption_Default",
+			"[Version].[Version]" : "Caption_Default",
+			"[Year].[Year]" : "Caption_Default",
+			"[organization].[organization]" : "Caption_Base",
+			"[product].[product]" : "Caption_Default"
+		},
+		"ContextSets" : 
+		{
+			"[Channel].[Channel]" : 
+			{
+				"Expression" : "{[Channel].MEMBERS}"
+			},
+			"[Revenue].[Revenue]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "Default"
+			},
+			"[Version].[Version]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "Budget - Actual"
+			},
+			"[organization].[organization]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "Default"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Channel].[Channel]" : false,
+			"[Month].[Month]" : false,
+			"[Revenue].[Revenue]" : false,
+			"[Version].[Version]" : false,
+			"[Year].[Year]" : false,
+			"[organization].[organization]" : false,
+			"[product].[product]" : false
+		}
+	}
+}

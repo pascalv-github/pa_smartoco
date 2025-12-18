@@ -1,0 +1,123 @@
+{
+	"@type":"Hierarchy",
+	"Name":"zMes",
+	"Elements":
+	[
+		{
+			"Name":"Jan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Feb",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mar",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Apr",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"May",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jun",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jul",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Aug",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sep",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Oct",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nov",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dec",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total Year",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"Jan",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"Feb",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"Mar",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"Apr",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"May",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"Jun",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"Jul",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"Aug",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"Sep",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"Oct",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"Nov",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"Dec",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":[]
+}

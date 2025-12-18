@@ -1,0 +1,67 @@
+{
+	"@type":"Process",
+	"Name":"}Drill_AssetLife",
+	"HasSecurityAccess":true,
+	"Code@Code.link":"}Drill_AssetLife.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"IgnoredInputVarName=Version€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=V2€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=V3€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=Value€VarType=33€ColType=1165€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"Asset Life",
+		"dataSourceNameForServer":"Asset Life",
+		"view":"Drill_Asset Life"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"cubename",
+			"Prompt":"",
+			"Value":"Capital",
+			"Type":"String"
+		},
+		{
+			"Name":"organization",
+			"Prompt":"",
+			"Value":"100",
+			"Type":"String"
+		},
+		{
+			"Name":"CapitalList",
+			"Prompt":"",
+			"Value":"Total",
+			"Type":"String"
+		},
+		{
+			"Name":"Asset Types",
+			"Prompt":"",
+			"Value":"Asset Total",
+			"Type":"String"
+		},
+		{
+			"Name":"Year",
+			"Prompt":"",
+			"Value":"Y1",
+			"Type":"String"
+		},
+		{
+			"Name":"Version",
+			"Prompt":"",
+			"Value":"Version 1",
+			"Type":"String"
+		},
+		{
+			"Name":"Capital",
+			"Prompt":"",
+			"Value":"Description",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

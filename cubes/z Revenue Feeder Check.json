@@ -1,0 +1,33 @@
+{
+	"@type":"Cube",
+	"Name":"z Revenue Feeder Check",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('product')"
+		},
+		{
+			"@id":"Dimensions('Channel')"
+		},
+		{
+			"@id":"Dimensions('Revenue Feeder Check')"
+		}
+	],
+	"Rules@Code.link":"z Revenue Feeder Check.rules",
+	"Views@Code.links":
+	[
+		"z Revenue Feeder Check.views/default.json"
+	]
+}

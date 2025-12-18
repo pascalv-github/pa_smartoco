@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"Revenue Feeder Check",
+	"Hierarchies@Code.links":
+	[
+		"Revenue Feeder Check.hierarchies/Revenue Feeder Check.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Revenue Feeder Check')/Hierarchies('Revenue Feeder Check')"
+	}
+}

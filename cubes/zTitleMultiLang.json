@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"zTitleMultiLang",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('z Titles')"
+		},
+		{
+			"@id":"Dimensions('zBlank')"
+		}
+	],
+	"Views@Code.links":[]
+}

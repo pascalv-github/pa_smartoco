@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}HierarchyAttributes_Supply Chain Measures",
+	"Hierarchies@Code.links":
+	[
+		"}HierarchyAttributes_Supply Chain Measures.hierarchies/}HierarchyAttributes_Supply Chain Measures.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}HierarchyAttributes_Supply Chain Measures')/Hierarchies('}HierarchyAttributes_Supply Chain Measures')"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Version Subsets",
+	"ElementsSortType":"ByHierarchy",
+	"Elements":
+	[
+		{
+			"Name":"Analysis",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Current",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Version Subsets.subsets/All Members.json",
+		"Version Subsets.subsets/Default.json"
+	]
+}

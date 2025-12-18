@@ -1,0 +1,293 @@
+#region Prolog
+
+
+#################################################################
+## IBM Confidential
+##
+## OCO Source Materials
+##
+## BI and PM: pmpsvc
+##
+## (C) Copyright IBM Corp. 2008, 2009, 2010
+##
+## The source code for this program is not published or otherwise
+## divested of its trade secrets, irrespective of what has been
+## deposited with the U.S. Copyright Office.
+#################################################################
+
+#*** Log File Name
+cConfigDim = '}tp_config';
+If (DimensionExists(cConfigDim) = 1);
+	cGenerateLog = ATTRS(cConfigDim, 'Generate TI Log', 'String Value');
+Else;
+	cGenerateLog = 'N';
+EndIf;
+
+cTM1Process = GetProcessName();
+StringGlobalVariable('gPrologLog');
+StringGlobalVariable('gEpilogLog');
+StringGlobalVariable('gDataLog');
+
+IF (cGenerateLog @= 'Y' % cGenerateLog @= 'T');
+vReturnValue = ExecuteProcess('}tp_get_log_file_names', 'pExecutionId', pExecutionId,
+'pProcess', cTM1Process, 'pControl', 'Y');
+If (vReturnValue <> ProcessExitNormal());
+	ProcessError;
+EndIf;
+Endif;
+
+cPrologLog = gPrologLog;
+cEpilogLog = gEpilogLog;
+cDataLog = gDataLog;
+cTM1Log = cPrologLog;
+
+#*** Log Parameters
+
+If (cGenerateLog @= 'Y');
+	TextOutput(cTM1Log, TIMST(NOW, '\Y-\m-\d \h:\i:\s'), 'Parameters:',pExecutionId, pAppId, pCube,pApprovalDim, pUpdateSubset, pVersionDim, pVersionSlicesWrite, pVersionSlicesRead);
+EndIf;
+
+#***
+vCellSecurityPermissionCube = '}CellSecurity_}tp_application_permission}' | pAppId;
+cCellSecurityCube = '}CellSecurity_' | pCube;
+cAllApplications = 'all_applications';
+vIncrGroupDim = 'tp_incr_temp_groups_' | pAppId;
+cTaskAppSecurityCube = '}tp_task_security}' | pCube | '}' | pAppId;
+cTaskNavigtionCube = '}tp_task_navigations}' | pAppId;
+cTaskNavigationDim = '}tp_task_navigation_dims}' | pAppId; 
+
+#***
+IF (CubeExists(cTaskAppSecurityCube) >0);
+
+#***
+cGroupsDim = '}Groups';
+IF (pIncremental @= 'Y');
+	cGroupsDim = vIncrGroupDim;
+Endif;
+
+#****
+versionIndex = 0;
+vNavigationDimFound = 0;
+dimensionIndex = 1;
+While (dimensionIndex > 0 ); 
+	cCubeDimensionName = TABDIM(pCube, dimensionIndex);
+	If (cCubeDimensionName @= '');
+		dimensionIndex = -1;
+	Else;
+		IF (cCubeDimensionName @=pVersionDim);
+			versionIndex = dimensionIndex;
+		Endif;
+
+		#***declare variables for task navigation elements
+		vTotalNavDimensions = DIMSIZ(cTaskNavigationDim);
+		vNavLooper = 1;
+		While (vNavLooper <= vTotalNavDimensions);
+			vNavigationDimName = DIMNM(cTaskNavigationDim, vNavLooper);
+			IF (vNavigationDimName @= cCubeDimensionName);
+				vNavigationDimFound = vNavigationDimFound +1;
+				
+				IF (vNavigationDimFound = 1);
+					vNavigationDim1 = vNavigationDimName;
+				Endif;
+
+				IF (vNavigationDimFound = 2);
+					vNavigationDim2 = vNavigationDimName;
+				Endif;
+
+				IF (vNavigationDimFound = 3);
+					vNavigationDim3 = vNavigationDimName;
+				Endif;
+
+				IF (vNavigationDimFound = 4);
+					vNavigationDim4 = vNavigationDimName;
+				Endif;
+
+				IF (vNavigationDimFound = 5);
+					vNavigationDim5 = vNavigationDimName;
+				Endif;
+
+			Endif;
+
+			vNavLooper = vNavLooper +1;
+
+		End;
+
+		#***
+
+	EndIf;
+
+	dimensionIndex = dimensionIndex + 1;
+End;
+
+#*Update Intermediate cell security cube
+IF (pUpdateIntermediateSecurity @= 'Y' & vNavigationDimFound>0);
+	vTotalGroups = DIMSIZ(cGroupsDim);
+	vGroupLooper = 1;
+	While (vGroupLooper <= vTotalGroups);
+		vGroup = DIMNM(cGroupsDim, vGroupLooper);
+		vTotalNodes = SubsetGetSize(pApprovalDim, pUpdateSubset);
+		vNodeLooper = 1;
+	
+		While (vNodeLooper <= vTotalNodes);
+			vApprovalNode = SubsetGetElementName(pApprovalDim, pUpdateSubset, vNodeLooper);
+
+			vDimensionElem1 = '';
+			vDimensionElem2 = '';
+			vDimensionElem3 = '';
+			vDimensionElem4 = '';
+			vDimensionElem5 = '';
+	
+			IF (vNavigationDimFound >=1);
+				vDimensionElem1 = CellGetS(cTaskNavigtionCube, vApprovalNode, vNavigationDim1, 'NavigationElement');
+			Endif;
+
+			IF (vNavigationDimFound >=2);
+				vDimensionElem2= CellGetS(cTaskNavigtionCube, vApprovalNode, vNavigationDim2, 'NavigationElement');
+			Endif;
+
+			IF (vNavigationDimFound >=3);
+				vDimensionElem3= CellGetS(cTaskNavigtionCube, vApprovalNode, vNavigationDim3, 'NavigationElement');
+			Endif;
+
+			IF (vNavigationDimFound >=4);
+				vDimensionElem4= CellGetS(cTaskNavigtionCube, vApprovalNode, vNavigationDim4, 'NavigationElement');
+			Endif;
+
+			IF (vNavigationDimFound >=5);
+				vDimensionElem5= CellGetS(cTaskNavigtionCube, vApprovalNode, vNavigationDim5, 'NavigationElement');
+			Endif;
+
+			vView = CellGetS(vCellSecurityPermissionCube, vApprovalNode, 'VIEW', vGroup);
+			vEdit = CellGetS(vCellSecurityPermissionCube, vApprovalNode, 'EDIT', vGroup);
+			vNodeSecurity = '';
+			vVersionSecurity = '';
+			vFinalSecurity = '';
+			IF (vView @= 'READ');
+				IF (DType(pApprovalDim, vApprovalNode) @='C');
+					vNodeSecurity = 'WRITE';
+				Else;
+					vNodeSecurity = 'READ';
+				Endif;
+			Endif;
+
+			IF (vEdit @= 'READ');
+				vNodeSecurity = 'WRITE';
+			Endif;
+							
+			IF (vNodeSecurity @<> '');
+
+				#***readable version slices
+				versionSeparater = '|';
+				vPosVersion = 0;
+				vStringToScan = pVersionSlicesRead;
+				IF (pVersionSlicesRead @<> '');
+					vPosVersion = SCAN(versionSeparater, vStringToScan);
+				Else;
+					#Even no readable version slices are defined, we still need to apply security
+					#based on approval dimension
+					vPosVersion = 1;
+				Endif;
+
+				While (vPosVersion >0);
+					vVersionSlice  = SUBST(vStringToScan, 1, vPosVersion-1);
+					vStringToScan = SUBST(vStringToScan, vPosVersion +1, LONG(vStringToScan)-vPosVersion);
+					vPosVersion = SCAN(versionSeparater, vStringToScan);
+
+
+					IF (versionIndex >0);
+						IF (vVersionSlice @<> '' );
+							IF (DIMIX(pVersionDim, vVersionSlice)=0);
+								vReturnValue = ExecuteProcess('}tp_error_update_error_cube',
+									'pGuid', pExecutionId,
+									'pProcess', cTM1Process,
+									'pErrorCode', 'TI_READABLE_SLICE_NOT_EXISTS',
+									'pErrorDetails', pVersionDim  | '.' | vVersionSlice | ', ' |  pAppId,
+									'pControl', 'Y');
+	
+								ProcessError;
+							Endif;
+
+							CellPutS('READ', cTaskAppSecurityCube, vDimensionElem1, vGroup);
+						Endif;
+					Else;
+						CellPutS('READ', cTaskAppSecurityCube, vDimensionElem1, vGroup);
+					Endif;
+				End;
+
+				#***writable version slices
+				versionSeparater = '|';
+				vPosVersion = 0;
+				vStringToScan = pVersionSlicesWrite;
+				IF (pVersionSlicesWrite @<> '');
+					vPosVersion = SCAN(versionSeparater, vStringToScan);
+				Else;
+					#Even no writable version slices are defined, we still need to apply security
+					#based on approval dimension
+					vPosVersion = 1;
+				Endif;
+
+				While (vPosVersion >0);
+					vVersionSlice  = SUBST(vStringToScan, 1, vPosVersion-1);
+					vStringToScan = SUBST(vStringToScan, vPosVersion +1, LONG(vStringToScan)-vPosVersion);
+					vPosVersion = SCAN(versionSeparater, vStringToScan);
+					IF (vNodeSecurity @= 'READ');
+						vFinalSecurity = 'READ';
+					Elseif (vNodeSecurity @= 'WRITE');
+						vFinalSecurity = 'WRITE';
+					Endif;
+
+					IF (versionIndex >0);	
+						IF (vVersionSlice @<>'');
+							IF (DIMIX(pVersionDim, vVersionSlice)=0);
+								vReturnValue = ExecuteProcess('}tp_error_update_error_cube',
+									'pGuid', pExecutionId,
+									'pProcess', cTM1Process,
+									'pErrorCode', 'TI_WRITABLE_SLICE_NOT_EXISTS',
+									'pErrorDetails', pVersionDim  | '.' | vVersionSlice | ', ' |  pAppId,
+									'pControl', 'Y');
+	
+								ProcessError;
+							Endif;
+							CellPutS(vFinalSecurity, cTaskAppSecurityCube, vDimensionElem1, vGroup);
+						Endif;
+					Else;
+						CellPutS(vFinalSecurity, cTaskAppSecurityCube, vDimensionElem1, vGroup);
+					Endif;
+
+				End;
+			Endif;
+
+			vNodeLooper = vNodeLooper  +1;
+		End;
+		vGroupLooper = vGroupLooper +1;
+	End;
+
+Endif;
+
+Endif;
+#endregion
+#region Epilog
+
+
+#################################################################
+## IBM Confidential
+##
+## OCO Source Materials
+##
+## BI and PM: pmpsvc
+##
+## (C) Copyright IBM Corp. 2008, 2009, 2010
+##
+## The source code for this program is not published or otherwise
+## divested of its trade secrets, irrespective of what has been
+## deposited with the U.S. Copyright Office.
+#################################################################
+
+vReturnValue = ExecuteProcess('}tp_rights_update_RDCLS_static_rights', 'pExecutionId', pExecutionId,
+	'pAppId', pAppId, 'pCube', pCube, 'pApprovalDim', pApprovalDim, 'pUpdateSubset', pUpdateSubset,
+	'pVersionDim', pVersionDim, 'pGroupsDim', cGroupsDim);
+
+If (vReturnValue <> ProcessExitNormal());
+	ProcessError;
+EndIf;
+#endregion

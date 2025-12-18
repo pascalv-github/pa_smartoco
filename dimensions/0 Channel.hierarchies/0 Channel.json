@@ -1,0 +1,51 @@
+{
+	"@type":"Hierarchy",
+	"Name":"0 Channel",
+	"Elements":
+	[
+		{
+			"Name":"Total Channel",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Franchise",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Direct",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Outlet",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Amazon",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Total Channel",
+			"ComponentName":"Franchise",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Channel",
+			"ComponentName":"Direct",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Channel",
+			"ComponentName":"Outlet",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Channel",
+			"ComponentName":"Amazon",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":[]
+}

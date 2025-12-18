@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"}HierarchyAttributes_CapitalList",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Hierarchies_CapitalList')"
+		},
+		{
+			"@id":"Dimensions('}HierarchyAttributes_CapitalList')"
+		}
+	],
+	"Views@Code.links":[]
+}

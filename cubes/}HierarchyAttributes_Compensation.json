@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"}HierarchyAttributes_Compensation",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Hierarchies_Compensation')"
+		},
+		{
+			"@id":"Dimensions('}HierarchyAttributes_Compensation')"
+		}
+	],
+	"Views@Code.links":[]
+}

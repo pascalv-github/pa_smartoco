@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"measures_pdh",
+	"Hierarchies@Code.links":
+	[
+		"measures_pdh.hierarchies/measures_pdh.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('measures_pdh')/Hierarchies('measures_pdh')"
+	}
+}

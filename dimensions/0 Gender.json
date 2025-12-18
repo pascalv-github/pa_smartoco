@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"0 Gender",
+	"Hierarchies@Code.links":
+	[
+		"0 Gender.hierarchies/0 Gender.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('0 Gender')/Hierarchies('0 Gender')"
+	}
+}

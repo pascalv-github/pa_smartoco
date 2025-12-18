@@ -1,0 +1,13 @@
+{
+	"@type":"Subset",
+	"Name":"nyyppa",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Gross Margin')"
+		},
+		{
+			"@id":"Dimensions('Revenue')/Hierarchies('Revenue')/Elements('Units Sold')"
+		}
+	]
+}

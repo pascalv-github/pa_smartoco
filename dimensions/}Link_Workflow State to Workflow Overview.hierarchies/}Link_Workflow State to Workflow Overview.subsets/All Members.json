@@ -1,0 +1,6 @@
+{
+	"@type":"Subset",
+	"Name":"All Members",
+	"Alias":"Caption",
+	"Expression":"[}Link_Workflow State to Workflow Overview].MEMBERS"
+}

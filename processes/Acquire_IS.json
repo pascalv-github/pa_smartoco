@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"Acquire_IS",
+	"HasSecurityAccess":true,
+	"Code@Code.link":"Acquire_IS.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

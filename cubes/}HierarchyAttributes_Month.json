@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"}HierarchyAttributes_Month",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Hierarchies_Month')"
+		},
+		{
+			"@id":"Dimensions('}HierarchyAttributes_Month')"
+		}
+	],
+	"Views@Code.links":[]
+}

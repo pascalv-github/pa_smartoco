@@ -1,0 +1,27 @@
+{
+	"@type":"Process",
+	"Name":"create_version",
+	"HasSecurityAccess":true,
+	"Code@Code.link":"create_version.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€_DeployParams={&quotdataAction&quot:&quotACCUMULATE&quot&#044&quotclass&quot:&quotDeployParams&quot&#044&quotdimensionConflictResolutions&quot:{}}€_ParseParams={&quotmeasures&quot:[]&#044&quothasHeader&quot:&quotfalse&quot&#044&quotnumColumns&quot:&quot0&quot&#044&quotskipRows&quot:&quot0&quot&#044&quotlocale&quot:{&quotlanguange&quot:&quoten&quot&#044&quotvariant&quot:&quot&quot&#044&quotcountry&quot:&quotUS&quot}&#044&quotdimensions&quot:[]}€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pNewVersion",
+			"Prompt":"New Version",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pLinkToDrivers",
+			"Prompt":"Link to Drivers ?",
+			"Value":"Y",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

@@ -1,0 +1,5 @@
+﻿FILE_FORMAT=100
+ENTRYNAME=Inc Statement summary.xlsx
+ENTRYTYPE=blob
+ENTRYREFERENCE=TM1:///blob/PUBLIC/.\}Externals\Inc Statement summary.xlsx_20170511192142.xlsx
+REMOVEBLOBONDELETE=Yes

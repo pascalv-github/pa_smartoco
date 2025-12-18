@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}HierarchyAttributes_Asset Types",
+	"Hierarchies@Code.links":
+	[
+		"}HierarchyAttributes_Asset Types.hierarchies/}HierarchyAttributes_Asset Types.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}HierarchyAttributes_Asset Types')/Hierarchies('}HierarchyAttributes_Asset Types')"
+	}
+}

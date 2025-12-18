@@ -1,0 +1,73 @@
+{
+	"@type":"Process",
+	"Name":"0 Loard Profit",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"0 Loard Profit.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"DataSource":
+	{
+		"Type":"ASCII",
+		"asciiDecimalSeparator":".",
+		"asciiDelimiterChar":";",
+		"asciiDelimiterType":"Character",
+		"asciiHeaderRecords":1,
+		"asciiQuoteCharacter":"\"",
+		"asciiThousandSeparator":",",
+		"dataSourceNameForClient":"model_upload\\Sales Analysis for PAW.csv",
+		"dataSourceNameForServer":"model_upload\\Sales Analysis for PAW.csv"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pResult",
+			"Prompt":"Import count result file",
+			"Value":"0 Load Purchase amount.blb",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vDim1",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vDim2",
+			"Type":"String",
+			"Position":4,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vDim3",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vDim4",
+			"Type":"String",
+			"Position":7,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vDim5",
+			"Type":"String",
+			"Position":6,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vValue",
+			"Type":"String",
+			"Position":8,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

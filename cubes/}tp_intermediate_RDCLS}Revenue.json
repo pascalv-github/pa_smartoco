@@ -1,0 +1,24 @@
+{
+	"@type":"Cube",
+	"Name":"}tp_intermediate_RDCLS}Revenue",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('}Groups')"
+		},
+		{
+			"@id":"Dimensions('}tp_intermediate_security_applications')"
+		},
+		{
+			"@id":"Dimensions('}tp_intermediate_security_measures')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"}tp_intermediate_RDCLS}Revenue.views/All.json",
+		"}tp_intermediate_RDCLS}Revenue.views/tp_intermediate_RDCLS}Revenue.json"
+	]
+}

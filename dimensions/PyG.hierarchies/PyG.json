@@ -1,0 +1,48 @@
+{
+	"@type":"Hierarchy",
+	"Name":"PyG",
+	"Elements":
+	[
+		{
+			"Name":"Units Sold",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Unit Price",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Unit Cost",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cost of Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Margin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Margin %",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Overheads",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Profit",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Profit %",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

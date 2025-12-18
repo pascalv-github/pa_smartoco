@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"User Language",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Clients')"
+		},
+		{
+			"@id":"Dimensions('User Language')"
+		}
+	],
+	"Views@Code.links":[]
+}

@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}Link_Revenue Metrics _3C Revenue",
+	"Hierarchies@Code.links":
+	[
+		"}Link_Revenue Metrics _3C Revenue.hierarchies/}Link_Revenue Metrics _3C Revenue.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Link_Revenue Metrics _3C Revenue')/Hierarchies('}Link_Revenue Metrics _3C Revenue')"
+	}
+}

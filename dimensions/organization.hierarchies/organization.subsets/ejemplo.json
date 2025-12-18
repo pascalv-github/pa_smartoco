@@ -1,0 +1,23 @@
+{
+	"@type":"Subset",
+	"Name":"ejemplo",
+	"Alias":"Caption_Base",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('100')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('102')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('103')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('300')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('400')"
+		}
+	]
+}

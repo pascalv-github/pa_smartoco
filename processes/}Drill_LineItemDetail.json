@@ -1,0 +1,71 @@
+{
+	"@type":"Process",
+	"Name":"}Drill_LineItemDetail",
+	"HasSecurityAccess":true,
+	"Code@Code.link":"}Drill_LineItemDetail.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"IgnoredInputVarName=organization€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=Account€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=V3€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=Version€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=LineItemList€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=LineItemDetail€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=V7€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=Value€VarType=32€ColType=1165€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"Line Item Detail",
+		"dataSourceNameForServer":"Line Item Detail",
+		"view":"Drill_Line Item Detail"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"cubename",
+			"Prompt":"",
+			"Value":"Income Statement",
+			"Type":"String"
+		},
+		{
+			"Name":"Currency Calc",
+			"Prompt":"",
+			"Value":"Local",
+			"Type":"String"
+		},
+		{
+			"Name":"organization",
+			"Prompt":"",
+			"Value":"100",
+			"Type":"String"
+		},
+		{
+			"Name":"Year",
+			"Prompt":"",
+			"Value":"Y1",
+			"Type":"String"
+		},
+		{
+			"Name":"Month",
+			"Prompt":"",
+			"Value":"Year",
+			"Type":"String"
+		},
+		{
+			"Name":"Account",
+			"Prompt":"",
+			"Value":"Statistics",
+			"Type":"String"
+		},
+		{
+			"Name":"Version",
+			"Prompt":"",
+			"Value":"Version 1",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

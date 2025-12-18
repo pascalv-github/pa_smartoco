@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}HierarchyAttributes_Compensation",
+	"Hierarchies@Code.links":
+	[
+		"}HierarchyAttributes_Compensation.hierarchies/}HierarchyAttributes_Compensation.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}HierarchyAttributes_Compensation')/Hierarchies('}HierarchyAttributes_Compensation')"
+	}
+}

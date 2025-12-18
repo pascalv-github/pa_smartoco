@@ -1,0 +1,11 @@
+
+#Region tp_task_security_rule_0f309cd0-4215-4482-8471-80ef000fcbb3
+['0f309cd0-4215-4482-8471-80ef000fcbb3','Rights']=S:IF(DB('}tp_task_security}Income Statement}0f309cd0-4215-4482-8471-80ef000fcbb3',!organization,!}Groups)@<>'',DB('}tp_task_security}Income Statement}0f309cd0-4215-4482-8471-80ef000fcbb3',!organization,!}Groups),CONTINUE);
+#EndRegion
+
+['WriteCount'] =IF(!}tp_intermediate_security_applications@<>'all_applications', IF(DB('}tp_intermediate_RDCLS}Income Statement',!organization,!}Groups,!}tp_intermediate_security_applications,'Rights')@= 'WRITE',1, 0 ),Continue);
+['ReadCount'] =IF(!}tp_intermediate_security_applications@<>'all_applications', IF(DB('}tp_intermediate_RDCLS}Income Statement',!organization,!}Groups,!}tp_intermediate_security_applications,'Rights')@= 'READ',1, 0 ),Continue);
+['all_applications','WriteCount']=ConsolidateChildren('}tp_intermediate_security_applications');
+['all_applications','ReadCount']=ConsolidateChildren('}tp_intermediate_security_applications');
+['all_applications','Rights']=S:IF(DB('}tp_intermediate_RDCLS}Income Statement',!organization,!}Groups,!}tp_intermediate_security_applications,'WriteCount')>0, 'WRITE', CONTINUE);
+['all_applications','Rights']=S:IF(DB('}tp_intermediate_RDCLS}Income Statement',!organization,!}Groups,!}tp_intermediate_security_applications,'ReadCount')>0, 'READ', '');

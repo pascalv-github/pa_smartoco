@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}HierarchyAttributes_Depreciation",
+	"Hierarchies@Code.links":
+	[
+		"}HierarchyAttributes_Depreciation.hierarchies/}HierarchyAttributes_Depreciation.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}HierarchyAttributes_Depreciation')/Hierarchies('}HierarchyAttributes_Depreciation')"
+	}
+}

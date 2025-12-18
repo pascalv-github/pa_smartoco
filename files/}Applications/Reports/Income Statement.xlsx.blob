@@ -1,0 +1,5 @@
+﻿FILE_FORMAT=100
+ENTRYNAME=Income Statement.xlsx
+ENTRYTYPE=blob
+ENTRYREFERENCE=TM1:///blob/PUBLIC/.\}Externals\Income Statement3.xlsx_20160630025527.xlsx
+REMOVEBLOBONDELETE=Yes

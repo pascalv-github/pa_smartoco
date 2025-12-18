@@ -1,0 +1,30 @@
+{
+	"@type":"NativeView",
+	"Name":"All",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('}Groups')/Hierarchies('}Groups')"
+				},
+				"Expression":"[}Groups].MEMBERS"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('organization')/Hierarchies('organization')/Subsets('All Members')"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

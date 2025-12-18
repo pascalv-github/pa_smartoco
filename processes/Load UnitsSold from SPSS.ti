@@ -1,0 +1,78 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+SubsetDeleteAllElements('Version', 'zExportToSPSS');
+SubsetElementInsert('Version', 'zExportToSPSS', pVersion, 1);
+ViewZeroOut('Revenue', 'zZeroPredictiveVersion');
+
+DataSourceType='CHARACTERDELIMITED';
+DatasourceASCIIDelimiter=',';
+DatasourceASCIIQuoteCharacter='"';
+DatasourceASCIIDecimalSeparator='.';
+DatasourceASCIIThousandSeparator=',';
+DatasourceNameForServer=CellGetS( 'Calendar', 'SPSS Directory','String')|'smartco_spss_forecast.csv';
+DatasourceNameForClient=DatasourceNameForServer;
+
+vCurrentYear = CellGetS('Calendar', 'Current Year','String');
+vCurrentYearIndex=ATTRN('Year',vCurrentYear,'Index');
+vForecastMonth = CellGetS('Calendar', 'Fcst Month','String');
+vForecastMonthIndex = ATTRN('Month',vForecastMonth,'Number');
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+IF (vType @= 'TSLCI');
+  ItemSkip;
+ENDIF;
+IF (vType @= 'TSUCI');
+  ItemSkip;
+ENDIF;
+
+vYearIndex = ATTRN('Year',vYear,'Index');
+vMonthIndex = ATTRN('Month',vMonth,'Number');
+vActfor='';
+vValue=0;
+
+IF (vYearIndex < vCurrentYearIndex);
+  vActFor = 'A';
+ENDIF;
+
+IF (vYearIndex = vCurrentYearIndex);
+   IF (vMonthIndex < vForecastMonthIndex);
+      vActFor = 'A';
+   ELSE;
+      vActFor = 'F';  
+   ENDIF;
+ENDIF;
+
+IF (vYearIndex > vCurrentYearIndex);
+    vActFor = 'F';
+ENDIF;
+
+IF (vActFor @= 'A' & vType @= 'Actual');
+     vValue = CellGetN('Revenue',vOrganization,vChannel,vProduct,vMonth, vYear,'Actual','Units Sold');
+     CellPutN(vValue,'Revenue',vOrganization,vChannel,vProduct,vMonth, vYear,pVersion,'Units Sold');
+ENDIF;
+
+IF (vActFor @= 'F' & vType @= 'TS');
+     CellPutN(vUnits,'Revenue',vOrganization,vChannel,vProduct,vMonth, vYear,pVersion,'Units Sold');
+ENDIF;
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

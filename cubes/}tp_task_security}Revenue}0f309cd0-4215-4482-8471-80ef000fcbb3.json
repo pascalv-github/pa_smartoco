@@ -1,0 +1,18 @@
+{
+	"@type":"Cube",
+	"Name":"}tp_task_security}Revenue}0f309cd0-4215-4482-8471-80ef000fcbb3",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('}Groups')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"}tp_task_security}Revenue}0f309cd0-4215-4482-8471-80ef000fcbb3.views/All.json",
+		"}tp_task_security}Revenue}0f309cd0-4215-4482-8471-80ef000fcbb3.views/tp_task_security}Revenue}0f309cd0-4215-4482-8471-80ef000fcbb3.json"
+	]
+}

@@ -1,0 +1,5 @@
+﻿FILE_FORMAT=100
+ENTRYNAME=Custom Workflow for Smartco.xlsx
+ENTRYTYPE=blob
+ENTRYREFERENCE=TM1:///blob/PUBLIC/.\}Externals\Custom Workflow for Smartco.xlsx_20160908200919.xlsx
+REMOVEBLOBONDELETE=Yes

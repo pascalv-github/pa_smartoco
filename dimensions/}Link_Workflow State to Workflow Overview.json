@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}Link_Workflow State to Workflow Overview",
+	"Hierarchies@Code.links":
+	[
+		"}Link_Workflow State to Workflow Overview.hierarchies/}Link_Workflow State to Workflow Overview.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Link_Workflow State to Workflow Overview')/Hierarchies('}Link_Workflow State to Workflow Overview')"
+	}
+}

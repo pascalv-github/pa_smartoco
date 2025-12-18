@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"}HierarchyAttributes_Benefit",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Hierarchies_Benefit')"
+		},
+		{
+			"@id":"Dimensions('}HierarchyAttributes_Benefit')"
+		}
+	],
+	"Views@Code.links":[]
+}

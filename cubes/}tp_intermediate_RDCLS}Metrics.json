@@ -1,0 +1,25 @@
+{
+	"@type":"Cube",
+	"Name":"}tp_intermediate_RDCLS}Metrics",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('}Groups')"
+		},
+		{
+			"@id":"Dimensions('}tp_intermediate_security_applications')"
+		},
+		{
+			"@id":"Dimensions('}tp_intermediate_security_measures')"
+		}
+	],
+	"Rules@Code.link":"}tp_intermediate_RDCLS}Metrics.rules",
+	"Views@Code.links":
+	[
+		"}tp_intermediate_RDCLS}Metrics.views/All.json",
+		"}tp_intermediate_RDCLS}Metrics.views/tp_intermediate_RDCLS}Metrics.json"
+	]
+}

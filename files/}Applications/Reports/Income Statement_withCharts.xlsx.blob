@@ -1,0 +1,5 @@
+﻿FILE_FORMAT=100
+ENTRYNAME=Income Statement_withCharts.xlsx
+ENTRYTYPE=blob
+ENTRYREFERENCE=TM1:///blob/PUBLIC/.\}Externals\Income Statement_withCharts.xlsx_20160908201337.xlsx
+REMOVEBLOBONDELETE=Yes

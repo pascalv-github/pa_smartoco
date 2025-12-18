@@ -1,0 +1,15 @@
+{
+	"@type":"Cube",
+	"Name":"zCurrUserLang",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('zCurrUserLang')"
+		},
+		{
+			"@id":"Dimensions('User Language')"
+		}
+	],
+	"Rules@Code.link":"zCurrUserLang.rules",
+	"Views@Code.links":[]
+}

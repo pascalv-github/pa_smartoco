@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"Reset Concert",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Reset Concert.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default Plant",
+	"Expression":"{DESCENDANTS({[organization].[Default Plant].DEFAULTMEMBER} , 1 , SELF_AND_BEFORE)}"
+}

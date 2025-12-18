@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"}HierarchyAttributes_Currency Calc",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Hierarchies_Currency Calc')"
+		},
+		{
+			"@id":"Dimensions('}HierarchyAttributes_Currency Calc')"
+		}
+	],
+	"Views@Code.links":[]
+}

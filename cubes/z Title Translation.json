@@ -1,0 +1,15 @@
+{
+	"@type":"Cube",
+	"Name":"z Title Translation",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('z Titles')"
+		},
+		{
+			"@id":"Dimensions('z Language Selection')"
+		}
+	],
+	"Rules@Code.link":"z Title Translation.rules",
+	"Views@Code.links":[]
+}

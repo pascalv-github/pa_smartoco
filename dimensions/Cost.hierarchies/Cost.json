@@ -1,0 +1,36 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Cost",
+	"Elements":
+	[
+		{
+			"Name":"Utilities",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Repairs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rent",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Marketing",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Travel",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Entertainment",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Automobiles",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

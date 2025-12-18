@@ -1,0 +1,12 @@
+{
+	"@type":"Hierarchy",
+	"Name":"zCurrUserLang",
+	"Elements":
+	[
+		{
+			"Name":"CurrUserLang",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

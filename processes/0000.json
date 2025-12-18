@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"0000",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"0000.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

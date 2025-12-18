@@ -1,0 +1,25 @@
+{
+	"@type":"Cube",
+	"Name":"}tp_intermediate_RDCLS}Income Statement",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('}Groups')"
+		},
+		{
+			"@id":"Dimensions('}tp_intermediate_security_applications')"
+		},
+		{
+			"@id":"Dimensions('}tp_intermediate_security_measures')"
+		}
+	],
+	"Rules@Code.link":"}tp_intermediate_RDCLS}Income Statement.rules",
+	"Views@Code.links":
+	[
+		"}tp_intermediate_RDCLS}Income Statement.views/All.json",
+		"}tp_intermediate_RDCLS}Income Statement.views/tp_intermediate_RDCLS}Income Statement.json"
+	]
+}

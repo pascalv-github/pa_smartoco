@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"}HierarchyAttributes_LineItemList",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Hierarchies_LineItemList')"
+		},
+		{
+			"@id":"Dimensions('}HierarchyAttributes_LineItemList')"
+		}
+	],
+	"Views@Code.links":[]
+}

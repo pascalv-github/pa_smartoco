@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"test",
+	"Expression":"{{TM1FILTERBYPATTERN(TM1SubsetAll([z Language Selection].[z Language Selection]),\"*qwe*\",\"MEMBER_NAME\")}}"
+}

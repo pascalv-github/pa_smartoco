@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}HierarchyAttributes_Month",
+	"Hierarchies@Code.links":
+	[
+		"}HierarchyAttributes_Month.hierarchies/}HierarchyAttributes_Month.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}HierarchyAttributes_Month')/Hierarchies('}HierarchyAttributes_Month')"
+	}
+}

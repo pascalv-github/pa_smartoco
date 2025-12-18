@@ -1,0 +1,36 @@
+{
+	"@type":"Cube",
+	"Name":"Revenue Metrics",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Revenue')"
+		},
+		{
+			"@id":"Dimensions('product')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')"
+		}
+	],
+	"Rules@Code.link":"Revenue Metrics.rules",
+	"MeasuresDimension":
+	{
+		"@id":"Dimensions('Revenue')"
+	},
+	"Views@Code.links":
+	[
+		"Revenue Metrics.views/All.json",
+		"Revenue Metrics.views/Product Profitability.json",
+		"Revenue Metrics.views/Product Trend.json"
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"@type":"Process",
+	"Name":"Update_AcctFcstMethod",
+	"HasSecurityAccess":true,
+	"Code@Code.link":"Update_AcctFcstMethod.ti",
+	"UIData":"CubeAction=1500€DataAction=1503€CubeName=}ElementAttributes_Account€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=825€VarDimension=Account€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=825€VarDimension=}ElementAttributes_Account€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=826€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"FcstMethod",
+		"dataSourceNameForServer":"FcstMethod",
+		"view":"CopyFrom"
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"Account",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"FcstMethod",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Value",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

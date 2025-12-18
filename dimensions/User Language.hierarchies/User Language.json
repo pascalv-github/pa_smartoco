@@ -1,0 +1,12 @@
+{
+	"@type":"Hierarchy",
+	"Name":"User Language",
+	"Elements":
+	[
+		{
+			"Name":"User Language",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":[]
+}

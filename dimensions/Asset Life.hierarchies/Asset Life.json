@@ -1,0 +1,17 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Asset Life",
+	"ElementsSortType":"ByHierarchy",
+	"Elements":
+	[
+		{
+			"Name":"Asset Life",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Asset Life.subsets/All Members.json",
+		"Asset Life.subsets/Default.json"
+	]
+}

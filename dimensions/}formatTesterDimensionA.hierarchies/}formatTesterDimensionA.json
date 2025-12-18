@@ -1,0 +1,16 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}formatTesterDimensionA",
+	"ElementsSortType":"ByHierarchy",
+	"Elements":
+	[
+		{
+			"Name":"memberX",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}formatTesterDimensionA.subsets/All Members.json"
+	]
+}

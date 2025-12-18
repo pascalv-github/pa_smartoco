@@ -1,0 +1,14 @@
+{
+	"@type":"Subset",
+	"Name":"Budget - Actual",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Actual')"
+		}
+	]
+}

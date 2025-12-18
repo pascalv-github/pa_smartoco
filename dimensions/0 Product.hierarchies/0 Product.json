@@ -1,0 +1,339 @@
+{
+	"@type":"Hierarchy",
+	"Name":"0 Product",
+	"Elements":
+	[
+		{
+			"Name":"Footwear",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total Product",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Menswear",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Jackets & Coats",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Polo T-Shirts",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pyjamas",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dresses",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Women",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Occasion & evening",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jewelry",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Watches",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Handbags & Wallets",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cold Weather",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Accesories",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Hats & Caps",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Neckties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bow Ties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Belts",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Suspenders",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sunglasses",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Acid Wash",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"High Fashion",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Basic Dresses",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Boyfriends Coats",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Floral Dresses",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Printed Dresses",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Logo Sweats",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"GilrsWear",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Children's Wear",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Boys' Collections",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tops & Shirts",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Feet",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sweatshirts",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Casual",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Jackects",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jeans",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Polos & Tees",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Total Product",
+			"ComponentName":"Menswear",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Product",
+			"ComponentName":"Women",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Product",
+			"ComponentName":"Accesories",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Product",
+			"ComponentName":"High Fashion",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Product",
+			"ComponentName":"Children's Wear",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Product",
+			"ComponentName":"Casual",
+			"Weight":1
+		},
+		{
+			"ParentName":"Menswear",
+			"ComponentName":"Footwear",
+			"Weight":1
+		},
+		{
+			"ParentName":"Menswear",
+			"ComponentName":"Jackets & Coats",
+			"Weight":1
+		},
+		{
+			"ParentName":"Menswear",
+			"ComponentName":"Polo T-Shirts",
+			"Weight":1
+		},
+		{
+			"ParentName":"Menswear",
+			"ComponentName":"Pyjamas",
+			"Weight":1
+		},
+		{
+			"ParentName":"Women",
+			"ComponentName":"Dresses",
+			"Weight":1
+		},
+		{
+			"ParentName":"Women",
+			"ComponentName":"Occasion & evening",
+			"Weight":1
+		},
+		{
+			"ParentName":"Women",
+			"ComponentName":"Jewelry",
+			"Weight":1
+		},
+		{
+			"ParentName":"Women",
+			"ComponentName":"Watches",
+			"Weight":1
+		},
+		{
+			"ParentName":"Women",
+			"ComponentName":"Handbags & Wallets",
+			"Weight":1
+		},
+		{
+			"ParentName":"Accesories",
+			"ComponentName":"Cold Weather",
+			"Weight":1
+		},
+		{
+			"ParentName":"Accesories",
+			"ComponentName":"Hats & Caps",
+			"Weight":1
+		},
+		{
+			"ParentName":"Accesories",
+			"ComponentName":"Neckties",
+			"Weight":1
+		},
+		{
+			"ParentName":"Accesories",
+			"ComponentName":"Bow Ties",
+			"Weight":1
+		},
+		{
+			"ParentName":"Accesories",
+			"ComponentName":"Belts",
+			"Weight":1
+		},
+		{
+			"ParentName":"Accesories",
+			"ComponentName":"Suspenders",
+			"Weight":1
+		},
+		{
+			"ParentName":"Accesories",
+			"ComponentName":"Sunglasses",
+			"Weight":1
+		},
+		{
+			"ParentName":"High Fashion",
+			"ComponentName":"Acid Wash",
+			"Weight":1
+		},
+		{
+			"ParentName":"High Fashion",
+			"ComponentName":"Basic Dresses",
+			"Weight":1
+		},
+		{
+			"ParentName":"High Fashion",
+			"ComponentName":"Boyfriends Coats",
+			"Weight":1
+		},
+		{
+			"ParentName":"High Fashion",
+			"ComponentName":"Floral Dresses",
+			"Weight":1
+		},
+		{
+			"ParentName":"High Fashion",
+			"ComponentName":"Printed Dresses",
+			"Weight":1
+		},
+		{
+			"ParentName":"High Fashion",
+			"ComponentName":"Logo Sweats",
+			"Weight":1
+		},
+		{
+			"ParentName":"Children's Wear",
+			"ComponentName":"GilrsWear",
+			"Weight":1
+		},
+		{
+			"ParentName":"Children's Wear",
+			"ComponentName":"Boys' Collections",
+			"Weight":1
+		},
+		{
+			"ParentName":"Children's Wear",
+			"ComponentName":"Tops & Shirts",
+			"Weight":1
+		},
+		{
+			"ParentName":"Children's Wear",
+			"ComponentName":"Feet",
+			"Weight":1
+		},
+		{
+			"ParentName":"Casual",
+			"ComponentName":"Sweatshirts",
+			"Weight":1
+		},
+		{
+			"ParentName":"Casual",
+			"ComponentName":"Jackects",
+			"Weight":1
+		},
+		{
+			"ParentName":"Casual",
+			"ComponentName":"Jeans",
+			"Weight":1
+		},
+		{
+			"ParentName":"Casual",
+			"ComponentName":"Polos & Tees",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":[]
+}

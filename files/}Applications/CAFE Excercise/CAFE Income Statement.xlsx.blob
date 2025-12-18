@@ -1,0 +1,5 @@
+﻿FILE_FORMAT=100
+ENTRYNAME=CAFE Income Statement.xlsx
+ENTRYTYPE=blob
+ENTRYREFERENCE=TM1:///blob/PUBLIC/.\}Externals\CAFE Income Statement.xlsx_20160111203000.xlsx
+REMOVEBLOBONDELETE=Yes

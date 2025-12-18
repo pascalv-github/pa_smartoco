@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}HierarchyAttributes_Currency Calc",
+	"Hierarchies@Code.links":
+	[
+		"}HierarchyAttributes_Currency Calc.hierarchies/}HierarchyAttributes_Currency Calc.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}HierarchyAttributes_Currency Calc')/Hierarchies('}HierarchyAttributes_Currency Calc')"
+	}
+}

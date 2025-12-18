@@ -1,0 +1,12 @@
+{
+	"@type":"Hierarchy",
+	"Name":"zBlank",
+	"Elements":
+	[
+		{
+			"Name":"blanc",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

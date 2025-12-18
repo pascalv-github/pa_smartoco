@@ -1,0 +1,55 @@
+{
+	"@type":"MDXView",
+	"Name":"Revenue by month",
+	"MDX@Code.link":"Revenue by month.mdx",
+	"Meta" : 
+	{
+		"Aliases" : 
+		{
+			"[Channel].[Channel]" : "Caption_Default",
+			"[Revenue].[Revenue]" : "Caption_Default",
+			"[Version].[Version]" : "Caption_Default",
+			"[Year].[Year]" : "Caption_Default",
+			"[organization].[organization]" : "Caption_Default",
+			"[product].[product]" : "Caption_Default"
+		},
+		"ContextSets" : 
+		{
+			"[Channel].[Channel]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "Default"
+			},
+			"[Revenue].[Revenue]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "Report"
+			},
+			"[Version].[Version]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "Current"
+			},
+			"[Year].[Year]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "Default"
+			},
+			"[organization].[organization]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "Workflow"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Channel].[Channel]" : false,
+			"[Month].[Month]" : false,
+			"[Revenue].[Revenue]" : false,
+			"[Version].[Version]" : false,
+			"[Year].[Year]" : false,
+			"[organization].[organization]" : false,
+			"[product].[product]" : false
+		}
+	}
+}

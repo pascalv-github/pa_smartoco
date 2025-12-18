@@ -1,0 +1,40 @@
+{
+	"@type":"MDXView",
+	"Name":"vista pascal",
+	"MDX@Code.link":"vista pascal.mdx",
+	"Meta" : 
+	{
+		"Aliases" : 
+		{
+			"[Channel].[Channel]" : "Caption_Default",
+			"[Revenue].[Revenue]" : "Caption_Default",
+			"[Version].[Version]" : "Caption_Default",
+			"[Year].[Year]" : "Caption_Default",
+			"[organization].[organization]" : "Caption_Default",
+			"[product].[product]" : "Caption_Default"
+		},
+		"ContextSets" : 
+		{
+			"[Month].[Month]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "MY"
+			},
+			"[Year].[Year]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "Default"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Channel].[Channel]" : false,
+			"[Month].[Month]" : false,
+			"[Revenue].[Revenue]" : false,
+			"[Version].[Version]" : false,
+			"[Year].[Year]" : false,
+			"[organization].[organization]" : false,
+			"[product].[product]" : false
+		}
+	}
+}

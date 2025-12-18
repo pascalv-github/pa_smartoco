@@ -1,0 +1,12 @@
+{
+	"@type":"Hierarchy",
+	"Name":"zDummy2",
+	"Elements":
+	[
+		{
+			"Name":"DA",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

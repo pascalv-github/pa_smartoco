@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"}HierarchyAttributes_Supply Chain Measures",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Hierarchies_Supply Chain Measures')"
+		},
+		{
+			"@id":"Dimensions('}HierarchyAttributes_Supply Chain Measures')"
+		}
+	],
+	"Views@Code.links":[]
+}

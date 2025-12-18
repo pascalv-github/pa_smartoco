@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"}zCurrUserLang",
+	"Expression":"{HEAD(TM1FILTERBYPATTERN(TM1FILTERBYLEVEL(TM1SUBSETALL([z Language Selection].[z Language Selection]) , 0) , zCurrUserLang.([zCurrUserLang].[CurrUserLang],[User Language].[User Language]) , \"MEMBER_NAME\") , 1)}"
+}

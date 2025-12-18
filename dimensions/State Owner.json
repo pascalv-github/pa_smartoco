@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"State Owner",
+	"Hierarchies@Code.links":
+	[
+		"State Owner.hierarchies/State Owner.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('State Owner')/Hierarchies('State Owner')"
+	}
+}
