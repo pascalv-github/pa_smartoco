@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"Title Translation",
+	"Hierarchies@Code.links":
+	[
+		"Title Translation.hierarchies/Title Translation.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Title Translation')/Hierarchies('Title Translation')"
+	}
+}

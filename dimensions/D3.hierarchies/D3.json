@@ -1,0 +1,20 @@
+{
+	"@type":"Hierarchy",
+	"Name":"D3",
+	"Elements":
+	[
+		{
+			"Name":"cantidad",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"precio",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"venta",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

@@ -1,0 +1,20 @@
+{
+	"@type":"Subset",
+	"Name":"ztest",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('101')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('102')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('202')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('400')"
+		}
+	]
+}

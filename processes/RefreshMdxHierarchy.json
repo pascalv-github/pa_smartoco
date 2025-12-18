@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"RefreshMdxHierarchy",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"RefreshMdxHierarchy.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

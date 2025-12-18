@@ -1,0 +1,20 @@
+{
+	"@type":"Subset",
+	"Name":"mi subset",
+	"Alias":"Caption_Base",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('102')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('202')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('302')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('402')"
+		}
+	]
+}

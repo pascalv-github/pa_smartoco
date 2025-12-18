@@ -1,0 +1,16 @@
+{
+	"@type":"Hierarchy",
+	"Name":"measures_pdh",
+	"Elements":
+	[
+		{
+			"Name":"Revenue",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Units",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

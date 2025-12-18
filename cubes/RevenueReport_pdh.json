@@ -1,0 +1,29 @@
+{
+	"@type":"Cube",
+	"Name":"RevenueReport_pdh",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Channel')"
+		},
+		{
+			"@id":"Dimensions('product')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version Reporting')"
+		},
+		{
+			"@id":"Dimensions('measures_pdh')"
+		}
+	],
+	"Views@Code.links":[]
+}

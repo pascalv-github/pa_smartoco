@@ -1,0 +1,21 @@
+{
+	"@type":"Hierarchy",
+	"Name":"JobTypeAssumption",
+	"ElementsSortType":"ByHierarchy",
+	"Elements":
+	[
+		{
+			"Name":"Merit %",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bonus %",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"JobTypeAssumption.subsets/All Members.json",
+		"JobTypeAssumption.subsets/Default.json"
+	]
+}

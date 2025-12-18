@@ -1,0 +1,92 @@
+{
+	"@type":"Process",
+	"Name":"Copy_RevAsmpt",
+	"HasSecurityAccess":true,
+	"Code@Code.link":"Copy_RevAsmpt.ti",
+	"UIData":"CubeAction=1500€DataAction=1503€CubeName=Revenue Assumptions€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=825€VarDimension=Channel€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=825€VarDimension=Month€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=825€VarDimension=Year€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=825€VarDimension=Version€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=825€VarDimension=RevenueAsmpt€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=33€ColType=826€",
+		"VarName=vTarget€VarType=32€ColType=825€VarFormula=vTarget=pNewNumber;:€VarFormulaDestination=BOTH€VarDimension=product€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"Revenue Assumptions",
+		"dataSourceNameForServer":"Revenue Assumptions",
+		"view":"zCopyAsmpt"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pParent",
+			"Prompt":"",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pNewNumber",
+			"Prompt":"",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"product",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Channel",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"V3",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"V4",
+			"Type":"String",
+			"Position":4,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Version",
+			"Type":"String",
+			"Position":5,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"RevenueAsmpt",
+			"Type":"String",
+			"Position":6,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Value",
+			"Type":"Numeric",
+			"Position":7,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

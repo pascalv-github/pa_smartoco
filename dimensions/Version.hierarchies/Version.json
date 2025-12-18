@@ -1,0 +1,148 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Version",
+	"Elements":
+	[
+		{
+			"Name":"Version 1",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Version 2",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Variance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Variance%",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Explanation",
+			"Type":"String"
+		},
+		{
+			"Name":"Performance Variance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ccy Exchange Variance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dashboard",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"DashboardCA",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Target",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Prior Year Actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Target vs Prior Year Actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Target vs Prior Year Actual %",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rate Variance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Volume Variance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Zero",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Predictive",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Predictivev2",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Target vs Budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Target vs Budget %",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forescast Low",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast High",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast Mkt",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast Prod",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total Forecast",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Total Forecast",
+			"ComponentName":"Forecast",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Forecast",
+			"ComponentName":"Forecast Mkt",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Forecast",
+			"ComponentName":"Forecast Prod",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Version.subsets/All Members.json",
+		"Version.subsets/All Members No Alias.json",
+		"Version.subsets/Analysis.json",
+		"Version.subsets/Budget - Actual.json",
+		"Version.subsets/Budget Target.json",
+		"Version.subsets/Cognos.json",
+		"Version.subsets/Current.json",
+		"Version.subsets/Default.json",
+		"Version.subsets/Predictive.json",
+		"Version.subsets/zCopyFrom.json",
+		"Version.subsets/zExportToSPSS.json",
+		"Version.subsets/ZX.json"
+	]
+}

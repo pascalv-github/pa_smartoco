@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"Year2",
+	"Hierarchies@Code.links":
+	[
+		"Year2.hierarchies/Year2.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Year2')/Hierarchies('Year2')"
+	}
+}

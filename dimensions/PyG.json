@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"PyG",
+	"Hierarchies@Code.links":
+	[
+		"PyG.hierarchies/PyG.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('PyG')/Hierarchies('PyG')"
+	}
+}

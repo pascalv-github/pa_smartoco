@@ -1,0 +1,46 @@
+{
+	"@type":"Process",
+	"Name":"Load Workflow Info",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Load Workflow Info.ti",
+	"UIData":"CubeAction=1500€DataAction=1503€CubeName=Workflow Reporting€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=825€VarDimension=organization€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=825€VarDimension=Workflow Info€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=826€",
+		"VarName=V4€VarType=32€ColType=825€VarFormula=V4='1';:€VarFormulaDestination=BOTH€VarDimension=BI Measure€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"}tp_application_state}fe9b5a92-91a3-4277-ad83-36c70c92732b",
+		"dataSourceNameForServer":"}tp_application_state}fe9b5a92-91a3-4277-ad83-36c70c92732b",
+		"view":"All"
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"organization",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"V2",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Value",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

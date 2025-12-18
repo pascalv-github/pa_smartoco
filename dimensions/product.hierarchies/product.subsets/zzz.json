@@ -1,0 +1,17 @@
+{
+	"@type":"Subset",
+	"Name":"zzz",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('21000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('23000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('32000')"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"@type":"Hierarchy",
+	"Name":"D2",
+	"Elements":
+	[
+		{
+			"Name":"w",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"e",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"t2",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"t2",
+			"ComponentName":"w",
+			"Weight":1
+		},
+		{
+			"ParentName":"t2",
+			"ComponentName":"e",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":[]
+}

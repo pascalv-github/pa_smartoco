@@ -1,0 +1,12 @@
+{
+	"@type":"Process",
+	"Name":"zztest",
+	"HasSecurityAccess":false,
+	"UIData":"_ParameterConstraints=e30=€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

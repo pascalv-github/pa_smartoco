@@ -1,0 +1,14 @@
+{
+	"@type":"Subset",
+	"Name":"mi selección",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('100')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('200')"
+		}
+	]
+}

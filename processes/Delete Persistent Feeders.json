@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"Delete Persistent Feeders",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Delete Persistent Feeders.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

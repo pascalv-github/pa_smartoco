@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"User Language",
+	"Hierarchies@Code.links":
+	[
+		"User Language.hierarchies/User Language.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('User Language')/Hierarchies('User Language')"
+	}
+}

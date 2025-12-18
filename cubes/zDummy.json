@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"zDummy",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('zDummy1')"
+		},
+		{
+			"@id":"Dimensions('zDummy2')"
+		}
+	],
+	"Views@Code.links":[]
+}

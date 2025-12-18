@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"zCurrUserLang",
+	"Hierarchies@Code.links":
+	[
+		"zCurrUserLang.hierarchies/zCurrUserLang.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('zCurrUserLang')/Hierarchies('zCurrUserLang')"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"z Language Selection",
+	"Hierarchies@Code.links":
+	[
+		"z Language Selection.hierarchies/z Language Selection.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('z Language Selection')/Hierarchies('z Language Selection')"
+	}
+}

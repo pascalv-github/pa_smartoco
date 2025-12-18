@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"zVersion",
+	"Hierarchies@Code.links":
+	[
+		"zVersion.hierarchies/zVersion.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('zVersion')/Hierarchies('zVersion')"
+	}
+}

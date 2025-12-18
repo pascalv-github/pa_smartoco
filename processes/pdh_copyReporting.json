@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"pdh_copyReporting",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"pdh_copyReporting.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

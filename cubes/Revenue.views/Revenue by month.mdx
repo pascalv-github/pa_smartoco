@@ -1,0 +1,1 @@
+SELECT {EXCEPT({TM1SubsetToSet([Month].[Month],"MY","public")}, {[Month].[Month].[Year]}, ALL)} ON 0, {TM1SubsetToSet([product].[product],"Groups","public")} ON 1 FROM [Revenue] WHERE ([organization].[organization].[Total Company], [Revenue].[Revenue].[Gross Margin^Gross Revenue], [Channel].[Channel].[Channel Total], [Year].[Year].[Y2], [Version].[Version].[Version 1])

@@ -1,0 +1,80 @@
+{
+	"@type":"Process",
+	"Name":"Load_PYActuals",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Load_PYActuals.ti",
+	"UIData":"CubeAction=1500€DataAction=1503€CubeName=Income Statement€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=825€VarDimension=Currency Calc€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=825€VarDimension=organization€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=825€VarDimension=Month€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=825€VarDimension=Account€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarType=32€ColType=827€",
+		"VarType=33€ColType=827€",
+		"VarName=tVersion€VarType=32€ColType=825€VarFormula=tVersion='Actual';:€VarFormulaDestination=BOTH€VarDimension=Version€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€",
+		"VarName=vValue€VarType=33€ColType=826€VarFormula=vValue=IF(Account@='6600',value,:IF(Account@='6610',value,:value*(.97+RAND*(.06))));:€VarFormulaDestination=BOTH€",
+		"VarName=vYr2011€VarType=32€ColType=825€VarFormula=vYr2011='Y1';:€VarFormulaDestination=BOTH€VarDimension=Year€VarDimAction=As Is€VarElemType=Numeric€VarDimElemSortType=BYINPUT€VarDimElemSortSense=ASCENDING€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"Income Statement",
+		"dataSourceNameForServer":"Income Statement",
+		"view":"BudgetFrom"
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"cCurrency",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"organization",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vYear",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vMonth",
+			"Type":"String",
+			"Position":4,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Account",
+			"Type":"String",
+			"Position":5,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Version",
+			"Type":"String",
+			"Position":6,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"Value",
+			"Type":"Numeric",
+			"Position":7,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

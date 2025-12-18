@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"zMes",
+	"Hierarchies@Code.links":
+	[
+		"zMes.hierarchies/zMes.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('zMes')/Hierarchies('zMes')"
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"@type":"Cube",
+	"Name":"Sales Analysis",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('0 Channel')"
+		},
+		{
+			"@id":"Dimensions('0 Year')"
+		},
+		{
+			"@id":"Dimensions('0 DATE')"
+		},
+		{
+			"@id":"Dimensions('0 Country')"
+		},
+		{
+			"@id":"Dimensions('0 Product')"
+		},
+		{
+			"@id":"Dimensions('0 Gender')"
+		}
+	],
+	"Views@Code.links":[]
+}

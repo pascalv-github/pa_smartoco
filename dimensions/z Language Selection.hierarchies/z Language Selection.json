@@ -1,0 +1,25 @@
+{
+	"@type":"Hierarchy",
+	"Name":"z Language Selection",
+	"Elements":
+	[
+		{
+			"Name":"English",
+			"Type":"String"
+		},
+		{
+			"Name":"Español",
+			"Type":"String"
+		},
+		{
+			"Name":"Current User",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"z Language Selection.subsets/test.json",
+		"z Language Selection.subsets/zCurrUserLang.json",
+		"z Language Selection.subsets/}zCurrUserLang.json"
+	]
+}

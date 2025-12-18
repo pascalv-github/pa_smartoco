@@ -1,0 +1,17 @@
+{
+	"@type":"Subset",
+	"Name":"test",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('101')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('102')"
+		},
+		{
+			"@id":"Dimensions('organization')/Hierarchies('organization')/Elements('202')"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"zBlank",
+	"Hierarchies@Code.links":
+	[
+		"zBlank.hierarchies/zBlank.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('zBlank')/Hierarchies('zBlank')"
+	}
+}

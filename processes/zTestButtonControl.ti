@@ -1,0 +1,10 @@
+#region Prolog
+v1=CellGetN( 'zDummy', 'D1', 'DA' );
+v2=CellGetN( 'zDummy', 'D2', 'DA' );
+v3=v1/v2;
+v3=SQRT( v1 );
+#v3=4;
+CellPutN( v3, 'zDummy', 'D3', 'DA' );
+
+
+#endregion

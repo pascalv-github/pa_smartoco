@@ -1,0 +1,15 @@
+skipcheck;
+
+['FeederFlag']=N:1;
+
+['Gross Revenue']=N:['Unit Price']*['Units Sold'];
+
+['IsUnderfed']=N: IF( ['IsFed']=0 & ['Gross Revenue']<>0, 1, 0 );
+['IsUnderfed']=C: ConsolidateChildren( 'Year','Version','Month','organization','product','Channel','Revenue Feeder Check');
+
+['IsOverfed']=N: IF( ['IsFed']>0 & ['Gross Revenue']=0, 1, 0 );
+['IsOverfed']=C:ConsolidatedCount(2,'', 'Year','Version','Month','organization','product','Channel','Revenue Feeder Check');
+
+FEEDERS;
+
+['Gross Revenue']=> ['FeederFlag'],['IsOverfed'];

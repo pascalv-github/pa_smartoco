@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"zDummy1",
+	"Hierarchies@Code.links":
+	[
+		"zDummy1.hierarchies/zDummy1.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('zDummy1')/Hierarchies('zDummy1')"
+	}
+}
